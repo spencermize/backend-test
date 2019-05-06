@@ -2,6 +2,7 @@
   /silverstripe-cache/
   /.env
   /vendor/
+  vendor/
   /themes/simple/
   /resources/
   /public/resources/
