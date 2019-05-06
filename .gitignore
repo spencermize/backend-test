@@ -1,0 +1,13 @@
+  .DS_Store
+  /silverstripe-cache/
+  /.env
+  /vendor/
+  /themes/simple/
+  /resources/
+  /public/resources/
+  /public/assets/
+  /.stylelintcache/
+  /node_modules/
+  /build/bs-config.js
+  yarn-error.log
+  ss_errors.log
