@@ -15,7 +15,7 @@ Please use the ORM rather than crafting queries by hand.
 To submit your test please commit all work to the master branch of your fork and send us a link to your forked repository.
 
 ##### Project Setup
-* You need a local dev environment (we use MAMP but whatever you are compfortable with)
+* You need a local dev environment (we use MAMP but whatever you are comfortable with)
 * Point your vhost at the /public folder in this project
 * Installing Composer:
 	* `$ curl -s https://getcomposer.org/installer | php`
@@ -29,7 +29,7 @@ To submit your test please commit all work to the master branch of your fork and
 
 ##### SilverStripe Documentation
 * Adding a table to the database: https://www.silverstripe.org/learn/lessons/v4/introduction-to-the-orm-1
-* Adding a new page/congroller: https://www.silverstripe.org/learn/lessons/v4/the-holderpage-pattern-1
+* Adding a new page/controller: https://www.silverstripe.org/learn/lessons/v4/the-holderpage-pattern-1
 * Outputting content to the page: https://www.silverstripe.org/learn/lessons/v4/adding-dynamic-content-1
 * More lessons here: https://docs.silverstripe.org/en/4/lessons/
 
