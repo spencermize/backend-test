@@ -4,8 +4,8 @@ use SilverStripe\ORM\DataObject;
 
 class Author extends DataObject {
 	private static $db = [
-		'FirstName'		=> 'Date',
-		'LastName'		=> 'Text'
+		'FirstName'		=> 'Varchar',
+		'LastName'		=> 'Varchar'
 	];
 
 	private static $has_many = [
@@ -13,4 +13,9 @@ class Author extends DataObject {
 	];
 
 	private static $api_access = true;
+	private static $table_name = 'Author';
+
+	public function getFullName() {
+		return $this->FirstName . ' ' . $this->LastName;
+	}
 }
