@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Simple. by Sara (saratusar.com, @saratusar) for Innovatif - an awesome Slovenia-based digital agency (innovatif.com/en)
+Slightly less simple, by Spencer
 Change it, enhance it and most importantly enjoy it!
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 -->
@@ -22,23 +22,25 @@ Change it, enhance it and most importantly enjoy it!
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<% require themedCSS('reset') %>
-	<% require themedCSS('typography') %>
-	<% require themedCSS('form') %>
-	<% require themedCSS('layout') %>
+
+	<% require themedCSS('app') %>
 	<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
 </head>
 <body class="$ClassName.ShortName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-<% include Header %>
-<div class="main" role="main">
-	<div class="inner typography line">
-		$Layout
-	</div>
+<div id="app">
+	<% include Header %>
+	<div class="container">
+		<div class="main" role="main">
+			<div class="inner typography line">
+				$Layout
+			</div>
+		</div>
+		<% include Footer %>
+	</div>	
 </div>
-<% include Footer %>
-
-<% require javascript('//code.jquery.com/jquery-3.3.1.min.js') %>
-<% require themedJavascript('script') %>
+<% require themedJavascript('manifest', 'text/javascript') %>
+<% require themedJavascript('vendor', 'text/javascript') %>
+<% require themedJavascript('app-es5', 'text/javascript') %>
 
 </body>
 </html>
