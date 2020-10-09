@@ -1,5 +1,5 @@
 <?php 
-namespace Vendor\Booker;
+namespace Spencer\Booker;
 use SilverStripe\Admin\ModelAdmin;
 
 class AuthorAdmin extends ModelAdmin {
