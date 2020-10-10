@@ -27,7 +27,7 @@ Change it, enhance it and most importantly enjoy it!
 	<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
 </head>
 <body class="$ClassName.ShortName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-<div id="app">
+<div id="app" v-cloak>
 	<% include Header %>
 	<div class="container">
 		<div class="main" role="main">
