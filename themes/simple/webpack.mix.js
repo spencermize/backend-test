@@ -1,7 +1,6 @@
 /* eslint-env node */
 const webpack = require('webpack');
 const mix = require('laravel-mix');
-
 require('dotenv').config();
 
 mix.options({
@@ -18,6 +17,7 @@ let config = {
 	plugins: [
 		new webpack.DefinePlugin({
 			PRODUCTION: JSON.stringify(mix.inProduction()),
+			GOOGLE_API: JSON.stringify(process.env.GOOGLE_API)
 		})	
 	]
 };
