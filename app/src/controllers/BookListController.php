@@ -52,9 +52,12 @@ class BookListController extends Controller {
 				));
 
 			}
-
-
 		}
+
+		$this->getResponse()->setBody(json_encode([
+			'status' => 'success'
+		]));
+		return $this->getResponse();
 	}
 
 	private function setup($request){
