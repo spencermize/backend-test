@@ -1,4 +1,6 @@
 webfonts/.DS_Store
 images/.DS_Store
 css/.DS_Store
+css/app.css
+javascript/*
 node_modules
